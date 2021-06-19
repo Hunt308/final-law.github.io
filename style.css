@@ -57,6 +57,7 @@ header .top-message .number{
 
 
 
+
 /*Navbar */
 
 /* text-align center doesn't work for ul when flex is already there, use justify-content: center; instead */
@@ -382,11 +383,13 @@ footer .footer-last{
     display: flex;
     align-items: center;
     position: relative;
+    
 }
 
 .page-title h1{
     position: absolute;
     left: 20%;
+    padding: 1rem 0;
 }
 
 .container{
@@ -534,6 +537,9 @@ footer .footer-last{
 
 } 
 
+.another-number-2{
+    color: #0169b2;
+}
 
 
 
@@ -1048,6 +1054,11 @@ footer .footer-last{
         z-index: 3;
     }
 
+    .page-size{
+        height: 100px;
+        text-align: left;
+    }
+
     
 
     .law-practice-final .law-practices{
@@ -1183,10 +1194,10 @@ footer .footer-last{
 
     .toggle{
         position: fixed;
-        top: 8px;
+        top: 5px;
         right: 20px;
-        width: 40px;
-        height: 40px;
+        width: 39px;
+        height: 39px;
         background: #0169b2 url(images/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
@@ -1276,7 +1287,7 @@ footer .footer-last{
         left: 5%;
         margin: 0 1.5rem;
         font-size: 22px;
-        text-align: center;
+        text-align: left;
     }
 
 
@@ -1296,7 +1307,7 @@ footer .footer-last{
     }
 
 
-    .firm-content img{
+    .firm-content img, .business-content img, .contract-content img{
         width: 250px;
         height: 200px;
         margin: 2rem 0;
@@ -1419,6 +1430,10 @@ footer .footer-last{
         
     }
 
+    .when-mediate p, .when-mediate h3{
+        width: 100%;
+    }
+
 
 
     
@@ -1448,6 +1463,7 @@ footer .footer-last{
         left: 0%;
         margin: 0 1.5rem;
         max-width: 500px;
+        width: 70%;
     }
 }
 
