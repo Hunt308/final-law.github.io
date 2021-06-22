@@ -10,6 +10,8 @@
 
 
 
+
+
 /* Top message */
 
 
@@ -67,7 +69,7 @@ header .top-message .number{
     background: #000;
     width: 100%;
     font-family: 'Roboto';
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .nav-bar ul{
@@ -78,7 +80,7 @@ header .top-message .number{
 
 .nav-bar li{
     list-style: none;
-    margin-left: 70px;
+    margin-left: 60px;
 }
 
 .nav-bar a{
@@ -233,7 +235,7 @@ li.dropdown{
 .law-about-img{
     position: absolute;
     z-index: -1;
-    left: 10%;
+    left: 5%;
 
 }
 
@@ -476,18 +478,7 @@ footer .footer-last{
 }
 
 
-.main-content .contact-info{
-    border-bottom: 1px solid #393434;
-    border-top: 1px solid #393434;
-    text-transform: uppercase;
-    margin: 1rem 0;
-    padding: 0.5rem 0;
-}
 
-.main-content .contact-info a{
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 
 .main-content ul{
@@ -515,6 +506,7 @@ footer .footer-last{
 .conference h2{
     color: #FFD702;
     text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
     margin: 1rem;
 }
 
@@ -537,9 +529,41 @@ footer .footer-last{
 
 } 
 
+
 .another-number-2{
     color: #0169b2;
 }
+
+/* Conference sub page */
+
+
+.btn-backspace{
+    color: #000;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: #FFD702;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+
+}
+
+.btn-backspace:hover{
+    background: #ffe75e;
+}
+
+.conf-img-each{
+    height: 350px;
+    width: 350px;
+    margin: 1.5rem;
+    margin-top: 2rem;
+
+} 
+
+
 
 
 
@@ -717,7 +741,7 @@ footer .footer-last{
 }
 
 .page-title span{
-    text-decoration: underline;
+    color: #a0ccb2;
 }
 
 .business-content{
@@ -1411,15 +1435,6 @@ footer .footer-last{
         max-width: 900px;
     }
 
-    .conference, .conference h2, .conference p, .conference img{
-        background: #393434;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        
-    }
 
     .contact-col-2 p, .contact-col-2 h2, .contact-col-1 h2, .contact-col-1 p, iframe{
         text-align: center;
@@ -1433,6 +1448,24 @@ footer .footer-last{
     .when-mediate p, .when-mediate h3{
         width: 100%;
     }
+
+    .conf-img-each{
+        height: 250px;
+        width: 250px;
+        margin: 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    
+    } 
+
+    .btn-backspace{
+        
+        display: inline-block;
+        margin-top: 2rem;
+    
+    }
+
 
 
 
