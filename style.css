@@ -1510,6 +1510,11 @@ footer .footer-last{
         height: 37px;
         margin: 0.3rem;
     }
+
+    .law-about{
+        height: 900px;
+        
+    }
 }
 
 
@@ -1532,7 +1537,7 @@ footer .footer-last{
     .law-about-img{
         position: absolute;
         z-index: -1;
-        bottom: -18%;
+        bottom: -10%;
         left: 4%;
     
     }
