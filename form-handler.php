@@ -10,7 +10,7 @@ $message = $_POST['message'];
 
 // Email of the website like domain name
 
-$email_from = 'law-station.com';
+$email_from = 'info@yourwebsite.com';
 
 $email_subject = 'New Form Submission';
 

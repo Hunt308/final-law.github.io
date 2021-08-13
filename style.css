@@ -1,1488 +1,1695 @@
 /* Global items */
-/* Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-.container {
-  max-width: 1180px;
-  position: relative;
-  left: 20%;
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  /* padding: 0; */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+
+
+
 
 /* Top message */
-header .top-message {
-  width: 100%;
-  background: #B81A1A;
-  color: #fff;
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 12px;
-  padding: 20px 0;
+
+
+
+
+
+header .top-message{
+    width: 100%;
+    background:#B81A1A;
+    color: #fff;
+    text-align:center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding: 20px 0;
 }
 
-header .top-message .free {
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0 3px;
+
+
+header .top-message .free{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 3px;
 }
 
-header .top-message .number {
-  text-decoration: underline;
-  margin: 0 3px;
-  cursor: pointer;
-  color: #fff;
+header .top-message .number{
+    text-decoration: underline;
+    margin: 0 3px;
+    cursor: pointer;
+    color: #fff;
 }
 
 /* Sub heading title */
-.sub-heading {
-  width: 100%;
-  background: url("images/header-background-small-1024x198.jpg");
-  height: 20px 0;
+
+.sub-heading{
+    width: 100%;
+    background: url('images/header-background-small-1024x198.jpg');
+    height: 20px 0;
+    
 }
 
-.sub-heading img {
-  max-width: 900px;
-  position: relative;
-  left: 20%;
+.sub-heading img{
+    max-width: 900px;
+    position: relative;
+    left: 19%;
 }
+
+
+
+
 
 /*Navbar */
+
 /* text-align center doesn't work for ul when flex is already there, use justify-content: center; instead */
-.nav-bar {
-  padding: 20px 0;
-  background: #000;
-  width: 100%;
-  font-family: 'Roboto';
-  font-size: 14px;
+
+.nav-bar{
+    padding: 20px 0;
+    background: #000;
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 14px;
 }
 
-.nav-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+
 }
 
-.nav-bar li {
-  list-style: none;
-  margin-left: 60px;
+.nav-bar li{
+    list-style: none;
+    margin-left: 60px;
 }
 
-.nav-bar a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
 }
 
-.nav-bar a:hover, .nav-bar .active {
-  border-bottom: 2px solid #fff;
+.nav-bar a:hover, .nav-bar .active{
+    border-bottom: 2px solid #fff;
 }
+
 
 .dropbtn {
-  color: white;
-  text-align: center;
-  text-decoration: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
 
-.center li a:hover, .dropdown:hover .dropbtn {
-  color: white;
+.center li a:hover, .dropdown:hover .dropbtn{
+    color: white;
 }
 
-li.dropdown {
-  display: inline-block;
+li.dropdown{
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #000;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.dropdown-content a {
-  color: #fff;
-  padding: 12px 30px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.dropdown-content a{
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #333;
+    background-color: #333;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown:hover .dropdown-content{
+    display: block;
 }
+
+
 
 /* Hero Section */
-.hero-section {
-  height: 450px;
-  width: 100%;
-  background: url("images/header-background.jpg");
-  background-repeat: none;
-  position: relative;
-  background-attachment: fixed;
+
+.hero-section{
+    height: 450px;
+    width: 100%;
+    background: url('images/header-background.jpg');
+    background-repeat: none;
+    position: relative;
+    background-attachment: fixed;
+    
 }
+
 
 /* .hero-section .sub-head{
     display: none;
 } */
-.head-section {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+
+
+.head-section{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
-.hero-section .btn {
-  margin-top: 1rem;
-  text-decoration: none;
-  background: #B81A1A;
-  border-radius: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+
+.hero-section .btn{
+    margin-top: 1rem;
+    text-decoration: none;
+    background: #B81A1A;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+
+
 }
 
-.hero-section .btn:hover {
-  background: #ff0000;
+
+.hero-section .btn:hover{
+    background: #ff0000;
+
 }
 
 /* Find the right font later */
+
+
 /* Grid Cards */
-.hero-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  height: 324px;
-  background: #393434;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 100px;
+
+.hero-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 324px;
+    background: #393434;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
-.hero-cards .card {
-  margin: 1rem 3rem;
+.hero-cards .card{
+    margin: 1rem 3rem;
 }
 
-.hero-cards .card h2 {
-  margin: 1rem 0rem;
-  color: #E0B01E;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+.hero-cards .card h2{
+    margin: 1rem 0rem;
+    color: #E0B01E;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
 }
 
-.hero-cards .card p {
-  color: #fff;
-  font-size: 16px;
-  line-height: 2.9rem;
-  max-width: 200px;
+.hero-cards .card p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 2.9rem;
+    max-width: 200px;
+    font-family: 'Roboto';
+
 }
 
-.hero-section .main-head {
-  width: 80%;
+.hero-section .main-head{
+    width: 80%;
 }
+
 
 /* About Section */
-.law-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 380px;
-  position: relative;
-  z-index: 2;
+
+.law-about{
+    display: flex;
+    height: 380px;
+    position: relative;
+    z-index: 2;
+    
 }
 
-.law-about-img {
-  position: absolute;
-  z-index: -1;
-  left: 5%;
+.law-about-img{
+    position: absolute;
+    z-index: -1;
+    left: 5%;
+
 }
 
-.law-about p {
-  max-width: 600px;
+
+.law-about p{
+    max-width: 600px;
+    font-family: 'Roboto';
 }
 
-.law-about .law-info {
-  position: absolute;
-  left: 40%;
-  top: 10%;
+
+.law-about .law-info{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+
 }
 
-.law-about .law-info h2 {
-  margin: 10px 0;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  max-width: 600px;
+.law-about .law-info h2{
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    max-width: 600px;
+
+    
 }
 
-.law-about .law-info a span {
-  font-weight: bold;
-  text-transform: uppercase;
+.law-about .law-info a span{
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
 
-.law-about .law-info .more-info {
-  position: absolute;
-  bottom: -47px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #FFD702;
-  color: #000;
-  padding: 8px 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  font-size: 14px;
+.law-about .law-info .more-info{
+    position: absolute;
+    bottom: -47px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #FFD702;
+    color: #000;
+    padding: 8px 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    
+
+
 }
 
-.law-about .law-info .more-info:hover {
-  background-color: #ffe75e;
+
+
+.law-about .law-info .more-info:hover{
+    background-color: #ffe75e;
 }
+
+
 
 /* Law Practice section */
-.law-practice-final {
-  background: #393434;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 40px;
-  position: relative;
-  z-index: 2;
+
+.law-practice-final{
+    background: #393434;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+
 }
 
-.law-practice-final div, .law-practice-final img {
-  margin: 0 6rem;
+.law-practice-final div, .law-practice-final img{
+    margin: 0 6rem;
 }
 
-.law-practice-final img {
-  width: 100%;
+.law-practice-final img{
+    width: 100%;
 }
 
-.law-practice-final h2 {
-  color: #FFD702;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-family: 'Raleway', sans-serif;
+.law-practice-final h2{
+    color: #FFD702;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
-.law-practice-final .law-practices {
-  line-height: 2.3rem;
-  max-width: 700px;
-  margin-right: 6rem;
+.law-practice-final .law-practices{
+    line-height: 2.3rem;
+    max-width: 700px;
+    margin-right: 6rem;
 }
 
-.law-practice-final .law-practices h3 {
-  color: #CCC5A0;
-  margin: 0.7rem 0;
-  text-transform: uppercase;
+.law-practice-final .law-practices h3{
+    color: #CCC5A0;
+    margin: 0.9rem 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    
 }
 
-.law-practice-final .law-practices p {
-  color: #fff;
-  margin-top: 0.5rem;
+
+.law-practice-final .law-practices p{
+    color: #fff;
+    margin-top: 0.5rem;
+    font-family: 'Roboto';
 }
 
 /* Footer */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
+
+footer{
+    background: #000;
+    text-align: center;
+    padding: 20px;
 }
 
-footer p {
-  line-height: 2rem;
-  font-family: 'Raleway', sans-serif;
+footer p{
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 
-footer .footer-first {
-  color: #FFD702;
+footer .footer-first{
+    color:#FFD702;
 }
 
-footer .footer-last {
-  color: #fff;
+footer .footer-last{
+    color:#fff;
 }
+
+
 
 /* Mediation page */
-.logo-sub-head {
-  background: url("images/header-background-small-1024x198.jpg");
-  position: relative;
-  height: 77px;
+
+.logo-sub-head{
+    background: url('images/header-background-small-1024x198.jpg');
+    position: relative;
+    height: 77px;
 }
 
-.logo-sub-head img {
-  position: absolute;
-  left: 20%;
-  margin: 5px 0;
-}
-
-.page-title {
-  background-color: #393434;
-  color: #CCC5A0;
-  text-transform: uppercase;
-  height: 69px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.page-title h1 {
-  position: absolute;
-  left: 20%;
-  padding: 1rem 0;
-}
-
-.page-title p{
+.logo-sub-head img{
     position: absolute;
     left: 20%;
-    padding: 5rem 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    margin: 5px 0;
+    
 }
 
-
-.container {
-  max-width: 900px;
-  position: relative;
-  left: 20%;
-}
-
-.main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-content .col-1, .main-content .col-2 {
-  margin: 0 1rem;
-}
-
-.main-content .col-1 {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
-  margin-top: 1rem;
-}
-
-.main-content .col-1 h2, .main-content .col-1 p, .main-content .col-1 h2, .main-content .col-1 ul {
-  margin-top: 2rem;
-  line-height: 1.5rem;
-}
-
-.main-content .col-1 h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-
-.main-content .col-2 {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
-  margin-top: 3rem;
-  margin-left: 4rem;
-}
-
-.col-2 p {
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.col-2 .lawyer-family-img {
-  width: 400px;
-  height: 372px;
-  margin-top: 2rem;
-}
-
-.when-mediate h2 {
-  text-align: center;
-  margin: 4rem 0;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-
-.when-mediate p, .when-mediate h3 {
-  margin-top: 2rem;
-  width: 90%;
-}
-
-.when-mediate h3 {
-  color: #615F5F;
-  font-family: 'Roboto';
-  text-transform: uppercase;
-}
-
-.when-mediate p:nth-child(2) {
-  margin-bottom: 3rem;
-}
-
-.col-2 img {
-  width: 100%;
-}
-
-.main-content ul {
-  margin-bottom: 2rem;
-}
-
-.conference {
-  background: #393434;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem 0;
-}
-
-.conference h2, .conference p {
-  margin: 0.8rem 0;
-}
-
-.conference-title .sub-p {
-  color: #CCC5A0;
-  text-transform: uppercase;
-  margin: 1rem;
-}
-
-.conference h2 {
-  color: #FFD702;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  margin: 1rem;
-}
-
-.conference .conference-info {
-  color: #fff;
-  line-height: 1.3rem;
-  margin: 1rem;
-}
-
-.conference p {
-  max-width: 500px;
-}
-
-.office-img {
-  height: 300px;
-  width: 300px;
-  margin: 1.5rem;
-}
-
-.another-number-2 {
-  color: #0169b2;
-}
-
-/* Conference sub page */
-.btn-backspace {
-  color: #000;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  background: #FFD702;
-  border-radius: 10px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 2rem;
-}
-
-.btn-backspace:hover {
-  background: #ffe75e;
-}
-
-.conf-img-each {
-  height: 350px;
-  width: 350px;
-  margin: 1.5rem;
-  margin-top: 2rem;
-}
-
-/* Firm page */
-.firm-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.firm-content p {
-  line-height: 1.5rem;
-  margin: 3rem 0;
-}
-
-.firm-content ul {
-  line-height: 1.5rem;
-}
-
-.firm-content img {
-  width: 400px;
-  height: 302px;
-  margin: 3rem 0;
-  margin-left: 3rem;
-}
-
-/* Staff page */
-.staff-row-1, .staff-row-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 3rem;
-}
-
-.staff-row-1 img, .staff-row-2 img {
-  margin: 1.5rem;
-}
-
-.staff-row-1 img {
-  border-radius: 50%;
-}
-
-.staff-p {
-  line-height: 1.5rem;
-}
-
-.staff-p .info {
-  margin-top: 1.1rem;
-}
-
-.staff-p h3 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  margin: 0.9rem 0;
-}
-
-/* Contact page */
-.contact-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-}
-
-.contact-content form {
-  background-color: #393434;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0.8rem 2rem;
-  border-radius: 10px;
-  margin: 2.5rem 0;
-}
-
-.contact-content form input, .contact-content form textarea {
-  border: none;
-  outline: none;
-  border-radius: 15px;
-  padding-left: 0.3rem;
-}
-
-.contact-content form textarea {
-  margin-bottom: 0.3rem;
-  padding-top: 0.3rem;
-}
-
-.contact-content form input {
-  width: 324px;
-  height: 37px;
-  margin: 0.3rem;
-}
-
-.contact-content form label {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.13em;
-  margin: 0.5rem;
-}
-
-.contact-content form p {
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 41px;
-  padding: 1rem;
-}
-
-.contact-content form .btn {
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: #FFD702;
-  color: #000;
-  border-radius: 10px;
-  margin: 0.5rem;
-  padding: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.contact-content form .btn:hover {
-  background: #ffe75e;
-}
-
-.contact-content iframe {
-  width: 350px;
-  height: 350px;
-  margin-bottom: 2rem;
-}
-
-.contact-col-2 {
-  margin-left: 4rem;
-}
-
-.contact-col-2 span {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.contact-col-1 h2, .contact-col-2 h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-
-.contact-col-2 p {
-  margin: 1.5rem 0;
-}
-
-.contact-col-1 .contact-p {
-  margin: 1.5rem 0;
-}
-
-.contact-col-2 .quote {
-  color: #615F5F;
-  font-style: italic;
-}
-
-/* Business page */
-.page-title {
-  word-spacing: 5px;
-}
-
-.page-title span {
-  color: #a0ccb2;
-}
-
-.business-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-}
-
-.business-content h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-
-.business-content p {
-  margin: 1.5rem 0;
-  margin-right: 1.5rem;
-}
-
-.business-content img {
-  margin-left: 1rem;
-}
-
-/* Family page */
-.family-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-}
-
-.family-content p {
-  margin: 1.5rem 0;
-  margin-right: 2.2rem;
-}
-
-.family-content img {
-  width: 100%;
-}
-
-/* Criminal page */
-.criminal-info h2 {
-  margin-top: 3rem;
-  font-family: 'Raleway', sans-serif;
-}
-
-.criminal-warrent h2, .criminal-info h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-
-.criminal-info p {
-  margin: 1.5rem 0;
-  line-height: 1.5rem;
-}
-
-.criminal-places {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.criminal-places .st-johns, .criminal-places .Department, .criminal-places .Putnam {
-  margin: 0 2.5rem;
-  margin-top: 1.5rem;
-}
-
-.criminal-warrent h2, .criminal-warrent p {
-  margin: 1.5rem 0;
-}
-
-.criminal-warrent li {
-  margin: 1.5rem 0;
-}
-
-.criminal-places p span {
-  font-style: italic;
-}
-
-/* Personal injury page */
-.personal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-}
-
-.personal p:nth-child(2) {
-  margin: 1.5rem 0;
-}
-
-.personal .personal-col-1 p {
-  margin-right: 2.2rem;
-}
-
-/*Contract page */
-.contract-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-}
-
-.contract-content img {
-  width: 350px;
-  height: 350px;
-}
-
-.contract-content h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-
-.contract-content p {
-  margin-top: 1.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.contract-content p {
-  margin-right: 2.9rem;
-}
-
-/* Media Queries */
-@media (max-width: 1250px) {
-  .firm-content p {
-    font-size: 14px;
-    line-height: 2.0rem;
-  }
-  .firm-content img {
-    width: 200px;
-    height: 150px;
-    margin: 2rem 0;
-    margin-left: 2rem;
-  }
-  .nav-bar li {
-    list-style: none;
-    margin-left: 35px;
-  }
-  .firm-content p {
-    max-width: 400px;
-  }
-  .law-practice-final img {
-    width: 400px;
-    height: 350px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .law-practice-final .law-practices p {
-    line-height: 1.5rem;
-    max-width: 900px;
-    margin-right: 0rem;
-    text-align: left;
-    margin-top: 1.5rem;
-  }
-  .law-practice-final .law-practices h3 {
-    margin-top: 1.5rem;
-  }
-  .law-practice-final div, .law-practice-final img {
-    margin: 0 1rem;
-  }
-}
-
-@media (max-width: 1150px) {
-  .law-about {
-    height: 800px;
-  }
-  .law-about-img {
-    position: absolute;
-    z-index: -1;
-    left: 10%;
-    bottom: -22%;
-  }
-  .law-about p {
-    max-width: 600px;
-  }
-  .law-about .law-info {
-    position: absolute;
-    left: 15%;
-    top: 10%;
-    line-height: 1.3rem;
-  }
-  .law-about .law-info h2 {
-    line-height: 1.7rem;
-  }
-  .container {
-    position: relative;
-    left: 12%;
-    margin: 1rem 1.5rem;
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .hero-cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 0px;
-  }
-  .hero-cards .card {
-    margin: 1rem 2.5rem;
-  }
-  .nav-bar li {
-    list-style: none;
-    margin-left: 50px;
-  }
-  .firm-content p {
-    max-width: 400px;
-  }
-  .criminal-places {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .container {
-    position: relative;
-    left: 10%;
-    margin: 1rem 1.5rem;
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero-cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 550px;
-    gap: 0px;
-  }
-  .nav-bar li {
-    list-style: none;
-    margin-left: 45px;
-  }
-  .col-2 .lawyer-family-img {
-    display: none;
-  }
-  .law-about p {
-    margin: 0 1rem;
-  }
-  .container {
-    position: relative;
-    left: 0%;
-    margin: 1rem 1.5rem;
-    max-width: 700px;
-  }
-  .staff-row-1, .staff-row-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    margin: 2rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .office-img {
-    display: none;
-  }
-  .conference {
-    background: #393434;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  .conference h2, .conference p {
-    margin: 0.8rem 0;
-  }
-  .conference-title .sub-p {
+.page-title{
+    background-color:  #393434;
     color: #CCC5A0;
     text-transform: uppercase;
-    margin: 0rem;
-    line-height: 1.7;
-  }
-  .conference h2 {
+    height: 69px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.page-title h1{
+    position: absolute;
+    left: 20%;
+    padding: 1rem 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+.container{
+    max-width: 900px;
+    position: relative;
+    left: 19%;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .col-1, .main-content .col-2{
+    margin: 0 1rem;
+}
+
+.main-content .col-1{
+    flex-basis: 35%;
+    margin-top: 1rem;
+
+}
+
+
+.main-content .col-1 h2, .main-content .col-1 p, .main-content .col-1 h2, .main-content .col-1 ul{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+
+.main-content .col-1 h2{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-content .col-2{
+    flex-basis: 35%;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.col-2 p{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.col-2 .lawyer-family-img{
+    width: 400px;
+    height: 372px;
+    margin-top: 2rem;
+}
+
+
+
+
+.when-mediate h2{
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.when-mediate p, .when-mediate h3{
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.when-mediate h3{
+    color: #615F5F;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+.when-mediate p:nth-child(2){
+    margin-bottom: 3rem;
+}
+
+
+
+.col-2 img{
+    width: 100%;
+}
+
+
+
+
+
+.main-content ul{
+    margin-bottom: 2rem;
+}
+
+.conference{
+    background: #393434;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    
+}
+
+.conference h2, .conference p{
+    margin: 0.8rem 0;
+}
+
+.conference-title .sub-p{
+    color: #CCC5A0;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.conference h2{
     color: #FFD702;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    margin: 0rem;
-  }
-  .conference .conference-info {
+    margin: 1rem;
+}
+
+.conference .conference-info{
     color: #fff;
     line-height: 1.3rem;
-    margin: 0rem;
-  }
-  .conference p {
-    max-width: 700px;
-  }
+    margin: 1rem;
 }
 
-@media (max-width: 800px) {
-  .law-practice-final {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header .top-message {
-    position: relative;
-    z-index: 3;
-  }
-  .page-size {
-    height: 100px;
-    text-align: left;
-  }
-  .law-practice-final .law-practices {
-    line-height: 2.3rem;
-    max-width: 700px;
-    margin-right: 0rem;
-    text-align: center;
-  }
-  .law-about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    height: 750px;
-  }
-  .law-about-img {
-    position: absolute;
-    z-index: -1;
-    bottom: -25%;
-    left: 4%;
-  }
-  .law-about .law-info {
-    position: absolute;
-    left: 0%;
-    top: 5%;
-    font-size: 14px;
-    margin: 0 1.5rem;
-  }
-  .law-about .law-info .more-info {
-    display: inline-block;
-    position: absolute;
-    bottom: -47px;
-    left: 0%;
-    width: 100%;
-  }
-  .law-about .law-info .link {
-    display: none;
-  }
-  .hero-section img {
-    display: none;
-  }
-  .hero-cards {
-    height: 700px;
-    text-align: center;
-  }
-  .hero-cards .card {
-    margin: 1rem 2rem;
-  }
-  .hero-section {
-    height: 190px;
-    background: url("images/header-background-small-1024x198.jpg");
-    background-repeat: none;
-    position: relative;
-    background-attachment: scroll;
-  }
-  .hero-section .btn {
-    padding: 5px 10px;
+.conference p{
+    max-width: 500px;
+    
+}
+
+
+.office-img{
+    height: 300px;
+    width: 300px;
+    margin: 1.5rem;
+
+} 
+
+
+.another-number-2{
+    color: #0169b2;
+}
+
+/* Conference sub page */
+
+
+.btn-backspace{
+    color: #000;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: #FFD702;
+    border-radius: 10px;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-  }
-  .hero-section .main-head {
-    display: block;
-  }
-  .nav-bar {
-    display: none;
-  }
-  .nav-bar.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    z-index: 3;
-  }
-  .nav-bar.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0c1818;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .toggle {
-    position: fixed;
-    top: 5px;
-    right: 20px;
-    width: 39px;
-    height: 39px;
-    background: #0169b2 url(images/menu.png);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 2px;
-  }
-  /* .active needs to stick to the toggle*/
-  .toggle.active {
-    background: #0169b2 url(images/close.png);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .nav-bar ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .nav-bar li {
-    margin-top: 20px;
-  }
-  .law-practice-final img {
-    width: 100%;
-    margin: 1rem;
-  }
-  .law-practice-final div, .law-practice-final img {
-    margin: 1rem 0rem;
-  }
-  .when-mediate p, .when-mediate h3 {
-    text-align: center;
-  }
-  .page-title {
-    text-align: center;
-  }
-  .main-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .main-content .col-1, .main-content .col-2 {
-    margin: 0 0rem;
-  }
-  .main-content .col-2 {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-top: 1rem;
-    margin-left: 0rem;
-  }
-  .container {
-    position: relative;
-    left: 0%;
-    margin: 0 1.5rem;
-    max-width: 700px;
-  }
-  .logo-sub-head img {
-    left: 0%;
-    width: 90%;
-    bottom: 15%;
-    margin: 0 1.5rem;
-  }
-  .logo-sub-head {
-    background: url("images/header-background-small-1024x198.jpg");
-    position: relative;
-    height: 120px;
-  }
-  .page-title h1 {
-    position: absolute;
-    left: 5%;
-    margin: 0 1.5rem;
-    font-size: 22px;
-    text-align: left;
-  }
-  .firm-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  ul li {
-    list-style: none;
-    margin: 3rem 0;
-  }
-  .firm-content img, .business-content img, .contract-content img {
-    width: 250px;
-    height: 200px;
-    margin: 2rem 0;
-    margin-left: 0rem;
-  }
-  .firm-content p {
-    max-width: 700px;
-  }
-  .contact-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-col-1 h2 {
-    margin-top: 1.2rem;
-  }
-  .contact-content form input {
-    width: 600px;
-    height: 37px;
-    margin: 0.3rem;
-  }
-  .business-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+    font-weight: bold;
+    display: inline-block;
     margin-top: 2rem;
-  }
-  .family-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .family-content p {
-    margin: 1.5rem 0;
-    margin-right: 0rem;
-  }
-  .criminal-warrent, .criminal-info {
-    text-align: center;
-  }
-  .criminal-places {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .personal {
-    margin-top: 2.5rem;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .personal img {
-    width: 100%;
-  }
-  .personal .personal-col-1 p {
-    margin-right: 0;
-  }
-  .contract-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    margin-top: 2.2rem;
-  }
-  .contract-content p {
-    margin-right: 0rem;
-  }
-  .sub-heading img {
-    position: relative;
-    left: 0%;
-    max-width: 900px;
-  }
-  .law-about .law-info {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    line-height: 1.3rem;
-    margin: 1rem;
-  }
-  .contract-content p {
-    max-width: 900px;
-  }
-  .contact-col-2 p, .contact-col-2 h2, .contact-col-1 h2, .contact-col-1 p, iframe {
-    text-align: center;
-  }
-  .contact-col-2 {
-    margin-left: 0rem;
-  }
-  .when-mediate p, .when-mediate h3 {
-    width: 100%;
-  }
-  .conf-img-each {
-    height: 250px;
-    width: 250px;
+
+}
+
+.btn-backspace:hover{
+    background: #ffe75e;
+}
+
+.conf-img-each{
+    height: 350px;
+    width: 350px;
     margin: 1.5rem;
     margin-top: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
+} 
+
+
+
+
+
+/* Firm page */
+
+.firm-content{
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .btn-backspace {
-    display: inline-block;
-    margin-top: 2rem;
-  }
+    
 }
 
-@media (max-width: 750px) {
-  .contact-content form input {
-    width: 550px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+.firm-content p{
+    line-height: 1.5rem;
+    margin: 3rem 0;
 }
 
-@media (max-width: 700px) {
-  .contact-content form input {
-    width: 500px;
-    height: 37px;
-    margin: 0.3rem;
-  }
-  .sub-heading img {
-    position: relative;
-    left: 0%;
-    margin: 0 1.5rem;
-    max-width: 500px;
-    width: 70%;
-  }
+.firm-content ul{
+    line-height: 1.5rem;
 }
 
-@media (max-width: 650px) {
-  .contact-content form input {
-    width: 450px;
-    height: 37px;
-    margin: 0.3rem;
-  }
-  .law-about {
-    height: 900px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-cards {
-    height: 800px;
-    text-align: center;
-  }
-  .law-about-img {
-    width: 80%;
-  }
-  .law-about-img {
-    position: absolute;
-    z-index: -1;
-    bottom: 0%;
-    left: 4%;
-  }
-  .sub-heading img {
-    position: relative;
-    left: 0%;
-    margin: 0 1.5rem;
-    max-width: 400px;
-  }
-  .contact-content form input {
+.firm-content img{
     width: 400px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+    height: 302px;
+    margin: 3rem 0;
+    margin-left: 3rem;
 }
 
-@media (max-width: 550px) {
-  .contact-content form input {
+
+/* Staff page */
+
+.staff-row-1, .staff-row-2{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+
+
+
+.staff-row-1 img, .staff-row-2 img{
+    margin: 1.5rem;
+}
+
+
+.staff-row-1 img{
+    border-radius: 50%;
+}
+
+.staff-p{
+    line-height: 1.5rem;
+}
+
+.staff-p .info{
+    margin-top: 1.1rem;
+}
+
+.staff-p h3{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin: 0.9rem 0;
+}
+
+
+/* Contact page */
+
+.contact-content{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.contact-content form{
+    background-color: #393434;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    margin: 2.5rem 0;
+
+
+}
+
+.contact-content form input, .contact-content form textarea{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 0.3rem;
+
+}
+
+.contact-content form textarea{
+    margin-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+.contact-content form input{
+    width: 324px;
+    height: 37px;
+    margin: 0.3rem;
+}
+
+
+.contact-content form label {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.13em;
+    margin: 0.5rem;
+}
+
+.contact-content form p{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 41px;
+    padding: 1rem;
+
+}
+
+.contact-content form .btn{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #FFD702;
+    color: #000;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+
+}
+
+
+.contact-content form .btn:hover{
+    background: #ffe75e;
+}
+
+.contact-content iframe{
     width: 350px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+    height: 350px;
+    margin-bottom: 2rem;
 }
 
-@media (max-width: 500px) {
-  .contact-content form input {
-    width: 300px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+.contact-col-2{
+    margin-left: 4rem;
+    
 }
 
-@media (max-width: 400px) {
-  header .top-message {
-    font-size: 8px;
-  }
-  .law-about-img {
-    position: absolute;
-    z-index: -1;
-    bottom: 0%;
-    left: 4%;
-  }
-  .contact-content form input {
-    width: 250px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+.contact-col-2 span{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-@media (max-width: 350px) {
-  header .top-message {
-    font-size: 5px;
-  }
-  .contact-content form input {
-    width: 200px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+.contact-col-1 h2, .contact-col-2 h2{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
 }
 
-@media (max-width: 250px) {
-  .contact-content form input {
-    width: 150px;
-    height: 37px;
-    margin: 0.3rem;
-  }
+.contact-col-2 p{
+    margin: 1.5rem 0;
 }
+
+.contact-col-1 .contact-p{
+    margin: 1.5rem 0;
+}
+
+.contact-col-2 .quote{
+    color: #615F5F;
+    font-style: italic;
+}
+
+/* Business page */
+
+.page-title{
+    word-spacing: 5px;
+}
+
+.page-title span{
+    color: #a0ccb2;
+}
+
+.business-content{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.business-content h2{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.business-content p{
+    margin: 1.5rem 0;
+    margin-right: 1.5rem;
+ 
+}
+
+.business-content img{
+    margin-left: 1rem;
+}
+
+/* Family page */
+
+.family-content{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.family-content p{
+    margin: 1.5rem 0;
+    margin-right: 2.2rem;
+ 
+}
+
+.family-content img{
+    width: 100%;
+ 
+}
+
+/* Criminal page */
+
+.criminal-info h2{
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.criminal-warrent h2, .criminal-info h2{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.criminal-info p{
+    margin: 1.5rem 0;
+    line-height: 1.5rem
+}
+
+.criminal-places{
+    display: flex;
+}
+
+
+.criminal-places .st-johns, .criminal-places .Department, .criminal-places .Putnam{
+    margin: 0 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.criminal-warrent h2, .criminal-warrent p{
+    margin: 1.5rem 0;
+}
+
+.criminal-warrent li{
+    margin: 1.5rem 0;
+}
+
+.criminal-places p span{
+    font-style: italic;
+}
+
+
+/* Personal injury page */
+
+.personal{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.personal p:nth-child(2){
+    margin: 1.5rem 0;
+}
+
+.personal .personal-col-1 p{
+    margin-right: 2.2rem;
+}
+
+/*Contract page */
+
+.contract-content{
+    display: flex;
+    margin-top: 3rem;
+
+}
+
+.contract-content img{
+    width: 350px;
+    height: 350px;
+}
+
+
+.contract-content h2{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contract-content p{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contract-content p{
+    margin-right: 2.9rem;
+}
+
+
+/* Media Queries */
+
+
+@media(max-width: 1250px){
+    .firm-content p{
+        font-size: 14px;
+        line-height: 2.0rem;
+    }
+
+    
+    .firm-content img{
+        width: 200px;
+        height: 150px;
+        margin: 2rem 0;
+        margin-left: 2rem;
+    }
+
+    .nav-bar li{
+        list-style: none;
+        margin-left: 35px;
+    }
+
+    .firm-content p{
+        max-width: 400px;
+    }
+
+    .law-practice-final img{
+        width: 400px;
+        height: 350px;
+        display: flex;
+        align-self: center;
+    }
+
+    .law-practice-final .law-practices p{
+        line-height: 1.5rem;
+        max-width: 900px;
+        margin-right: 0rem;
+        text-align: left;
+        margin-top: 1.5rem;
+    }
+
+    .law-practice-final .law-practices h3{
+        margin-top: 1.5rem;
+    }
+
+    .law-practice-final div, .law-practice-final img{
+        margin: 0 1rem;
+    }
+
+   
+
+
+}
+
+
+@media(max-width:1150px){
+    .law-about{
+        height: 800px;
+        
+    }
+
+    
+    .law-about-img{
+        position: absolute;
+        z-index: -1;
+        left: 10%;
+        bottom: -22%;
+
+    }
+
+    .law-about p{
+        max-width: 600px;
+    }
+
+    .law-about .law-info{
+        position: absolute;
+        left: 15%;
+        top: 10%;
+        line-height: 1.3rem;
+    
+    }
+
+    .law-about .law-info h2{
+        line-height: 1.7rem;
+    
+    }
+
+    .container{
+        position: relative;
+        left: 12%;
+        margin: 1rem 1.5rem;
+        max-width: 700px;
+    }
+
+    
+
+    
+}
+
+
+@media(max-width: 1000px){
+
+    .hero-cards{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .hero-cards .card{
+        margin: 1rem 2.5rem;
+    }
+
+    .nav-bar li{
+        list-style: none;
+        margin-left: 50px;
+    }
+
+    .firm-content p{
+        max-width: 400px;
+    }
+
+    .criminal-places{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .container{
+        position: relative;
+        left: 10%;
+        margin: 1rem 1.5rem;
+        max-width: 700px;
+    }
+
+
+    
+    
+
+    
+
+
+
+    
+}
+
+
+
+
+
+@media(max-width: 900px){
+    
+
+    .hero-cards{
+        flex-wrap: wrap;
+        height: 550px;
+        gap: 0px;
+    }
+
+    .nav-bar li{
+        list-style: none;
+        margin-left: 45px;
+    }
+
+    .col-2 .lawyer-family-img{
+        display: none;
+    }
+
+    .law-about p{
+        margin: 0 1rem;
+    }
+
+    .container{
+        position: relative;
+        left: 0%;
+        margin: 1rem 1.5rem;
+        max-width: 700px;
+    }
+
+
+
+    .staff-row-1, .staff-row-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem;
+        align-items: center;
+    }
+
+
+    .office-img{
+        display: none;
+    
+    } 
+
+    .conference{
+        background: #393434;
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+        
+    }
+    
+    .conference h2, .conference p{
+        margin: 0.8rem 0;
+    }
+    
+    .conference-title .sub-p{
+        color: #CCC5A0;
+        text-transform: uppercase;
+        margin: 0rem;
+        line-height: 1.7;
+    }
+    
+    .conference h2{
+        color: #FFD702;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        margin: 0rem;
+    }
+    
+    .conference .conference-info{
+        color: #fff;
+        line-height: 1.3rem;
+        margin: 0rem;
+    }
+    
+    .conference p{
+        max-width: 700px;
+        
+    }
+
+    
+
+
+
+
+   
+    
+}
+
+
+
+@media(max-width: 800px){
+    .law-practice-final{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+
+    header .top-message{
+        position: relative;
+        z-index: 3;
+    }
+
+    .page-size{
+        height: 100px;
+        text-align: left;
+    }
+
+    
+
+    .law-practice-final .law-practices{
+        line-height: 2.3rem;
+        max-width: 700px;
+        margin-right: 0rem;
+        text-align: center;
+    }
+
+
+    .law-about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 750px;
+        
+    }
+
+    .law-about-img{
+        position: absolute;
+        z-index: -1;
+        bottom: -25%;
+        left: 4%;
+    
+    }
+
+    .law-about .law-info{
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        font-size: 14px;
+        margin: 0 1.5rem;
+    
+    }
+
+    
+
+
+
+    .law-about .law-info .more-info{
+        display: inline-block;
+        position: absolute;
+        bottom: -47px;
+        left:0%;
+        width: 100%;
+    }
+
+    .law-about .law-info .link{
+        display: none;
+    }
+
+    .hero-section img{
+        display: none;
+    }
+
+    .hero-cards{
+        height: 700px;
+        text-align: center;
+    }
+
+    .hero-cards .card{
+        margin: 1rem 2rem;
+    }
+
+    .hero-section{
+        height: 190px;
+        background: url('images/header-background-small-1024x198.jpg');
+        background-repeat: none;
+        position: relative;
+        background-attachment: scroll;
+
+    }
+
+
+    .hero-section .btn{
+        padding: 5px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        
+        
+        
+    }
+
+  
+
+    .hero-section .main-head{
+        display: block;
+    }
+
+
+    .nav-bar{
+        display: none;
+    }
+
+    .nav-bar.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 3;
+
+
+    }
+    
+
+    .nav-bar.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0c1818;;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .toggle{
+        position: fixed;
+        top: 5px;
+        right: 20px;
+        width: 39px;
+        height: 39px;
+        background: #0169b2 url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 2px;
+    }
+
+    /* .active needs to stick to the toggle*/
+
+    .toggle.active{
+        background: #0169b2 url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+
+    .nav-bar li{
+        margin-top: 20px;
+    }
+
+    .law-practice-final img{
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .law-practice-final div, .law-practice-final img{
+        margin: 1rem 0rem;
+    }
+
+    .when-mediate p, .when-mediate h3{
+        text-align: center;
+    }
+
+    .page-title{
+        text-align: center;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content .col-1, .main-content .col-2{
+        margin: 0 0rem;
+    }
+
+    .main-content .col-2{
+        flex-basis: 100%;
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+
+    
+
+    
+    .container{
+        position: relative;
+        left: 0%;
+        margin: 0 1.5rem;
+        max-width: 700px;
+    }
+
+    .logo-sub-head img{
+        left: 0%;
+        width: 90%;
+        bottom: 15%;
+        margin: 0 1.5rem;
+    }
+
+    .logo-sub-head{
+        background: url('images/header-background-small-1024x198.jpg');
+        position: relative;
+        height: 120px;
+    }
+
+    .page-title h1{
+        position: absolute;
+        left: 5%;
+        margin: 0 1.5rem;
+        font-size: 22px;
+        text-align: left;
+    }
+
+
+
+    .firm-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+        
+   
+
+    ul li{
+        list-style: none;
+        margin: 3rem 0;
+    }
+
+
+    .firm-content img, .business-content img, .contract-content img{
+        width: 250px;
+        height: 200px;
+        margin: 2rem 0;
+        margin-left: 0rem;
+    }
+
+    .firm-content p{
+        max-width: 700px;
+    }
+
+
+    
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-col-1 h2{
+        margin-top: 1.2rem;
+    }
+
+    .contact-content form input{
+        width: 600px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+    .business-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .family-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .family-content p{
+        margin: 1.5rem 0;
+        margin-right: 0rem;
+     
+    }
+
+    .criminal-warrent, .criminal-info{
+        text-align: center;
+    }
+
+    .criminal-places{
+        display: flex;
+        justify-content: center;
+    }
+
+    .personal{
+        margin-top: 2.5rem;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .personal img{
+        width: 100%;
+    }
+    
+    .personal .personal-col-1 p{
+        margin-right: 0;
+    }
+
+    .contract-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2.2rem;
+    
+    }
+
+    .contract-content p{
+        margin-right: 0rem;
+    }
+
+    .sub-heading img{
+        position: relative;
+        left: 0%;
+        max-width: 900px;
+    }
+
+    .law-about .law-info{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        line-height: 1.3rem;
+        margin: 1rem;
+    
+    }
+
+  
+
+
+    .contract-content p{
+        max-width: 900px;
+    }
+
+
+    .contact-col-2 p, .contact-col-2 h2, .contact-col-1 h2, .contact-col-1 p, iframe{
+        text-align: center;
+    }
+
+    .contact-col-2{
+        margin-left: 0rem;
+        
+    }
+
+    .when-mediate p, .when-mediate h3{
+        width: 100%;
+    }
+
+    .conf-img-each{
+        height: 250px;
+        width: 250px;
+        margin: 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    
+    } 
+
+    .btn-backspace{
+        
+        display: inline-block;
+        margin-top: 2rem;
+    
+    }
+
+    
+
+
+
+    
+
+   
+
+}
+
+@media(max-width:750px){
+    .contact-content form input{
+        width: 550px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+}
+
+
+@media(max-width:700px){
+    .contact-content form input{
+        width: 500px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+    .sub-heading img{
+        position: relative;
+        left: 0%;
+        margin: 0 1.5rem;
+        max-width: 500px;
+        width: 70%;
+    }
+}
+
+
+@media(max-width:650px){
+    .contact-content form input{
+        width: 450px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+    .law-about{
+        height: 900px;
+        
+    }
+}
+
+
+
+
+
+
+@media(max-width: 600px){
+
+    .hero-cards{
+        height: 800px;
+        text-align: center;
+    }
+
+    .law-about-img{
+        width: 80%;
+    
+    }
+
+    .law-about-img{
+        position: absolute;
+        z-index: -1;
+        bottom: 0%;
+        left: 4%;
+    
+    }
+
+    
+
+    .sub-heading img{
+        position: relative;
+        left: 0%;
+        margin: 0 1.5rem;
+        max-width: 400px;
+    }
+
+    .contact-content form input{
+        width: 400px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+
+
+
+    
+   
+
+}
+
+@media(max-width:550px){
+    .contact-content form input{
+        width: 350px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+    
+
+}
+
+
+@media(max-width:500px){
+    .contact-content form input{
+        width: 300px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+
+}
+
+
+
+@media(max-width: 400px){
+    header .top-message{
+        font-size: 8px;
+    }
+
+    
+    .law-about-img{
+        position: absolute;
+        z-index: -1;
+        bottom: 0%;
+        left: 4%;
+    
+    }
+
+    .contact-content form input{
+        width: 250px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+
+
+}
+
+@media(max-width: 350px){
+    header .top-message{
+        font-size: 5px;
+    }
+
+    .contact-content form input{
+        width: 200px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+}
+
+
+@media(max-width: 250px){
+   
+
+    .contact-content form input{
+        width: 150px;
+        height: 37px;
+        margin: 0.3rem;
+    }
+
+}
+
+
+
