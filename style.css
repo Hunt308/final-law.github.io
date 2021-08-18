@@ -198,7 +198,7 @@ li.dropdown{
 .hero-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 324px;
+    height: 250px;
     background: #393434;
     display: flex;
     justify-content: center;
@@ -222,7 +222,7 @@ li.dropdown{
 .hero-cards .card p{
     color: #fff;
     font-size: 16px;
-    line-height: 2.9rem;
+    line-height: 1.5rem;
     max-width: 200px;
     font-family:  'Roboto', sans-serif;;
 
@@ -230,6 +230,10 @@ li.dropdown{
 
 .hero-section .main-head{
     width: 80%;
+}
+
+.main-content .col-1 a {
+    font-family:  'Roboto', sans-serif;
 }
 
 
@@ -556,6 +560,8 @@ footer .footer-last{
 .another-number-2{
     color: #0169b2;
 }
+
+
 
 /* Conference sub page */
 
