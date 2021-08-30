@@ -78,12 +78,13 @@ header .top-message .number{
 .nav-bar ul{
     display: flex;
     justify-content: center;
+    max-width: 1280px;
 
 }
 
 .nav-bar li{
     list-style: none;
-    margin-left: 60px;
+    padding-right: 4%;
 }
 
 .nav-bar a{
@@ -414,16 +415,16 @@ footer .footer-last{
 
 .page-title h1{
     position: absolute;
-    left: 20%;
+    left: 11%;
     padding: 1rem 0;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1280px;
     position: relative;
-    left: 19%;
+    left: 10%;
 }
 
 .main-content{
